@@ -1,0 +1,30 @@
+.characters-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.characters-container figure {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.character-image img {
+    width: 300px;
+    height: auto;
+}
+
+.character-name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 900px) {
+    .character-image img {
+        width: 100px;
+    }
+}
